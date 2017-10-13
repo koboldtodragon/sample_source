@@ -1,0 +1,47 @@
+h1 {
+	position: relative;
+	text-align: left;
+}
+h1 span {
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	margin: 0 2.5em;
+	padding: 0 1em;
+	background-color: #fff;
+	text-align: left;
+}
+h1::before {
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: #ccc;
+}
+
+#area{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+}
+
+#yamlInput{
+	width: 40%;
+	height: 80%;
+	border: thick #c0c0c0 double;
+	margin: 1em;
+	padding: 5px;
+}
+
+#jsonOutput {
+	width: 40%;
+	margin: 1em;
+	padding: 5px;
+	border: thick #c0c0c0 double;
+	background-color: #cafbce;
+	color: #0a8915;
+}
+
